@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 14;
     margin: 0;
     padding: 0;
+    background-color: #f7f7f7;
   }
 `;
 

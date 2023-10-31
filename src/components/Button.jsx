@@ -32,6 +32,40 @@ const Button = ({ children, variant, onClick }) => {
         color: 'white',
       };
       break;
+    case 'black':
+      buttonStyles = {
+        backgroundColor: 'black',
+        color: 'white',
+        height: '30px',
+        marginTop: '10px',
+      };
+      break;  
+      case 'white':
+      buttonStyles = {
+        backgroundColor: 'white',
+        color: 'black',
+        height: '30px',
+        marginTop: '10px',
+      };
+      break;  
+      case 'white-blue':
+      buttonStyles = {
+        backgroundColor: 'white',
+        color: 'blue',
+        height: '30px',
+        marginTop: '10px',
+        width: "fit-content",
+      };
+      break;  
+      case 'gray':
+      buttonStyles = {
+        backgroundColor: 'gray',
+        color: 'white',
+        height: '30px',
+        marginTop: '10px',
+        width: "fit-content",
+      };
+      break;  
     default:
       buttonStyles = {
         backgroundColor: 'gray',

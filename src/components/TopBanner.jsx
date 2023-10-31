@@ -33,7 +33,8 @@ const TopBannerContainer=styled.div`
 const ScrollContainer=styled.div`
     display: flex;
     justify-content: center;
-    width: 300px;
+    min-width: 250px;
+    height: 50vw;
 `
 
 const VerticalLine = styled.div`
@@ -54,7 +55,8 @@ const VerticalText = styled.p`
   white-space: nowrap; 
   writing-mode: vertical-rl; 
   font-size: 8px;
-  color: #007aff;  
+  color: #007aff;
+  letter-spacing: 2px;
 `;
 
 const SubTitle=styled.p`

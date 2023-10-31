@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Header from "../sections/header"
 import FirstSection from "../sections/FirstSection"
+import Footer from "../sections/Footer"
 
 
 
@@ -10,6 +11,7 @@ const IndexPage = () => (
   <Layout>
     <Header />
     <FirstSection />
+    <Footer />
   </Layout>
 )
 

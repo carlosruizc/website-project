@@ -13,7 +13,7 @@ const VideoBackground = () => {
         muted={true}
         loop={true}
         width="100%"
-        height="100%"
+        height="90%"
       />
     </VideoContainer>
   )
