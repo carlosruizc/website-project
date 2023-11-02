@@ -52,7 +52,7 @@ return (
         <Logo src="/static/logo.svg" />
         <FooterColumns>
             {footerContent.map(column => (
-                <Column>
+                <Column key={column.title}>
                     <BlueText><strong>{column.title}</strong></BlueText>
                     {column.items.map(item => (
                         <WhiteText key={item}>{item}</WhiteText>

@@ -1,14 +1,22 @@
 import * as React from "react"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const NotFoundPage = () => (
-  <Layout>
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  <Box>
+    <h1>Something Went Wrong</h1>
+    <h2>The page you were looking for was not found</h2>
+    <img src="/404.webp" />
+  </Box>
 )
+
+const Box=styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+  `
 
 export const Head = () => <Seo title="404: Not Found" />
 

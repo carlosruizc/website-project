@@ -28,6 +28,7 @@ const TopBanner=()=>{
 
 const TopBannerContainer=styled.div`
     display: flex;
+    margin-top: 80px;
 `
 
 const ScrollContainer=styled.div`

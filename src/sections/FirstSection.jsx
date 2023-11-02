@@ -5,7 +5,10 @@ import { Carousel } from 'primereact/carousel';
 import NextButton from "../icons/NextButton"
 import PrevButton from "../icons/PrevButton"
 import MenuArrow from "../icons/MenuArrow";
-
+import TopBanner from "../components/TopBanner";
+import InsightsCarousel from "../components/InsightsCarousel";
+import ClientsCarousel from "../components/ClientsCarousel";
+import VideoBackground from "../components/VideoBackground"
 
 const FirstSection = () => {
     const features = [
@@ -46,88 +49,7 @@ const FirstSection = () => {
         },
     ]
 
-    const clients = [
-        {
-            item:"0",
-            src:"/static/clients/allianz-logo.webp"            
-        },
-        {
-            item:"1",
-            src:"/static/clients/BoubyanBank.svg"            
-        },
-        {
-            item:"2",  
-            src:"/static/clients/cdc.svg"          
-        },
-        {
-            item:"3",
-            src:"/static/clients/cleveland-clinic.svg"            
-        },
-        {
-            item:"4",  
-            src:"/static/clients/Cognizant_Logo.svg"                      
-        },
-        {
-            item:"5",
-            src:"/static/clients/DefenseDigital.svg"                               
-        },
-        {
-            item:"6",  
-            src:"/static/clients/DepartmentHealthHuman.svg"          
-        },
-        {
-            item:"7",
-            src:"/static/clients/Dept-of-Transportation-Logo.svg"       
-        },
-        {
-            item:"8",     
-            src:"/static/clients/DISA.svg"       
-        },
-        {
-            item:"9",    
-            src:"/static/clients/Eastman_Chemical_Company_logo.svg"        
-        },
-        {
-            item:"10",      
-            src:"/static/clients/everlywell-logo.webp"      
-        },
-        {
-            item:"11",   
-            src:"/static/clients/FannieMae.svg"         
-        },
-        {
-            item:"12",
-            src:"/static/clients/freshfields-logo-vert.svg"            
-        },
-        {
-            item:"13",  
-            src:"/static/clients/GSA.svg"          
-        },
-        {
-            item:"14",
-            src:"/static/clients/InternalRevenueService.svg"            
-        },
-        {
-            item:"15",
-            src:"/static/clients/noy-logo.webp"            
-        },
-        {
-            item:"16",   
-            src:"/static/clients/StateofColorado.svg"         
-        },
-        {
-            item:"17",    
-            src:"/static/clients/SynSaber-Logo-Stacked-DBlue.svg"        
-        },
-        {
-            item:"18",   
-            src:"/static/clients/UnitedStatesAirForcе.svg"         
-        },
-        {
-            item:"19",     
-            src:"/static/clients/UnitedStatesArmy.svg"       
-        },
-    ]
+    
 
     const talent = [
         {
@@ -238,28 +160,7 @@ const FirstSection = () => {
         },
     ]
 
-    const blogs = [
-        {
-            item:"How to Stay Secure Amid AI Mania",
-            src:"/static/blogs/synack-blog-banner-repost-RH-ISAC-AI-1.webp"            
-        },
-        {
-            item:"Securing at the Rate of Innovation: Investment in Control and Visibility of Testing Traffic ",
-            src:"/static/blogs/synack-dev-teams-security-process-patching.webp"            
-        },
-        {
-            item:"Empowering Your Developer Teams: How to Overcome “Us vs. Them” with Vulnerability Remediation",  
-            src:"/static/blogs/synack-launchpoint-plus-blog-1.webp"          
-        },
-        {
-            item:"You Are the Weakest Link: Securing the Human Element",
-            src:"/static/blogs/synack-securing-layer8-blog-banner.webp"            
-        },
-        {
-            item:"Why You Need a Vulnerability Disclosure Program (VDP)",  
-            src:"/static/blogs/synack-Managed-VDP-blog-banner.jpg"                      
-        },
-    ]
+    
 
 
     const featureTemplate =(feature)=>{
@@ -274,14 +175,7 @@ const FirstSection = () => {
         )
     }
 
-    const clientTemplate =(client)=>{
-        return (
-            <LogoContainer>
-                <Logo src={client.src}></Logo>    
-            </LogoContainer>
-                     
-        )
-    }
+    
 
     const talentTemplate =(talent)=>{
         return (
@@ -305,10 +199,10 @@ const FirstSection = () => {
 
     const caseTemplate =(caseItem)=>{
         return (
-            <CaseContainer>
+            <CaseContainer key={caseItem.item}>
                 <p>{caseItem.item}</p>
                 <RoundContainerSmall>
-                    <RoundImageSmall src={caseItem.img} />
+                    <RoundImageSmall src={caseItem.img} alt={caseItem.item}/>
                 </RoundContainerSmall>
                 <div style={{margin:"10px 10px 20px 10px", display:"flex"}}>
                     <MenuArrow color="grey" />
@@ -330,26 +224,13 @@ const FirstSection = () => {
         )
     }
 
-    const blogTemplate =(blogItem)=>{
-        return (
-            <BlogContainer>
-                <img src={blogItem.src} style={{borderRadius:"20px"}} />
-                <div style={{margin:"20px"}}>
-                    <SubTitle >{blogItem.item}</SubTitle> 
-                    <div style={{display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"space-between"}}>
-                        <Button variant="gray" >BLOG</Button>
-                        <MenuArrow color="grey" />
-                    </div>  
-                    
-                </div>
-                
-            </BlogContainer>
-        )
-    }
+    
 
     return (
-        <>
+        <>        
+        <TopBanner />
         <TopBannerContainer>
+        <VideoBackground />
             <ScrollContainer>
                 <div>
                     <VerticalText>OUR STORY</VerticalText>
@@ -407,17 +288,7 @@ const FirstSection = () => {
                 </SectionContainerDouble>
             </RightContainer>            
         </TopBannerContainer>
-        <Carousel 
-            value={clients} 
-            numVisible={5} 
-            numScroll={1} 
-            circular 
-            autoplayInterval={3000} 
-            itemTemplate={clientTemplate} 
-            style={{margin:"5px 30px 5px 30px"}} 
-            nextIcon={NextButton} 
-            prevIcon={PrevButton}
-        />
+        <ClientsCarousel/>
         <RedContainer>
             <MapContainer>
                 <TextContainer>
@@ -440,18 +311,16 @@ const FirstSection = () => {
                     style={{width:"250px", marginRight:"100px", height:"450px", display:"flex", alignItems:"center", justifyContent:"center"}} 
                     prevIcon="null" 
                     nextIcon="null" 
-                    verticalViewPortHeight="300px"/>             
+                    verticalViewPortHeight="300px"/>                 
             </MapContainer>            
         </RedContainer>
         <UseCaseContainer>
-            
-                <Title>USE CASES</Title>
-                <SubTitle><strong><BlueText>Expect</BlueText></strong> solutions that scale</SubTitle>
-                <p>Synack provides the broadest coverage of security testing for company assets and infrastructure.</p>
-                <CasesContainer>
+            <Title>USE CASES</Title>
+            <SubTitle><strong><BlueText>Expect</BlueText></strong> solutions that scale</SubTitle>
+            <p>Synack provides the broadest coverage of security testing for company assets and infrastructure.</p>
+            <CasesContainer>
                     {cases.map(caseItem=>(caseTemplate(caseItem)))}
-                </CasesContainer>
-                      
+            </CasesContainer>
         </UseCaseContainer>
         <DemoContainer>
             <ShapeContainer>
@@ -472,22 +341,7 @@ const FirstSection = () => {
                 </div>
             </ShapeContainer> 
         </DemoContainer>
-        <InsightsContainer>            
-                <SubTitle><strong>1</strong> - 5</SubTitle>
-                <div style={{display:"flex", width:"800px", marginRight:"auto", marginLeft:"auto"}}>
-                <Carousel 
-                    value={blogs} 
-                    numVisible={2} 
-                    numScroll={1} 
-                    circular 
-                    autoplayInterval={4000} 
-                    itemTemplate={blogTemplate} 
-                    nextIcon={NextButton} 
-                    prevIcon={PrevButton}
-                    style={{width:"100%"}} 
-                />
-                </div>            
-        </InsightsContainer>
+        <InsightsCarousel />                
         <BlueContainer>
             <PowerContainer>
                 <BlueTitle><strong>Expect Synack</strong></BlueTitle>
@@ -506,6 +360,7 @@ const TopBannerContainer=styled.div`
 const RightContainer=styled.div`
     display: flex;
     flex-direction: column;
+    
 `
 
 const ScrollContainer=styled.div`
@@ -581,17 +436,6 @@ const BoldText = styled.p`
     font-weight: bold;
 `
 
-const LogoContainer=styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-    padding: 15px;
-`
-
-const Logo = styled.img`
-    height: 40px;
-`
 const RedContainer=styled.div`
     display: flex;    
     justify-content: center;
@@ -807,21 +651,9 @@ const DemoText=styled.div`
 
 `
 
-const InsightsContainer=styled.div`
-    display: flex;
-    flex-direction: column;
-    padding: 40px 40px 40px 150px;
-    background-color: white;
-`
 
-const BlogContainer=styled.div`
-    display: flex;
-    width: 300px;
-    flex-direction: column;
-    border-radius: 20px;
-    margin: 20px;
-    background-color: #f7f7f7;
-`
+
+
 
 const BlueContainer=styled.div`
     display: flex;    

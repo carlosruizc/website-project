@@ -19,6 +19,13 @@ const Button = ({ children, variant, onClick }) => {
         height: '30px',
       };
       break;
+    case 'primary-small-black':
+      buttonStyles = {
+        backgroundColor: 'black',
+        color: 'white',
+        height: '30px',
+      };
+      break;
     case 'secondary':
       buttonStyles = {
         backgroundColor: '#ececec',

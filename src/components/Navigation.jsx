@@ -2,29 +2,33 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import OverlayContainer from './OverlayContainer';
 
-const Navigation = ({tabContent, navbarColor, setNavbarColor}) => {
-
-  
+const Navigation = ({tabContent, navbarColor, setNavbarColor}) => {  
 
   const NavItem = ({ text, content, setNavbarColor }) => {
     const [isHovered, setHovered] = useState(false);
-    console.log("content", content.section)
   
     return (
-      <NavElement
-        onMouseEnter={() => {
-          setHovered(true)
-          setNavbarColor(content.color)
-        }}
-        onMouseLeave={() => {
-          setHovered(false)
-          setNavbarColor("transparent")
-        }}
-        style={{fontWeight: isHovered? "bold" : "normal", color: !isHovered && navbarColor!=="transparent" ? "white" : "black"}}
-      >
-        {text}
-        {isHovered && <Overlay content={content} isHovered={isHovered}/>}
-      </NavElement>
+      <NavDiv onMouseEnter={() => {
+        setHovered(true)
+        setNavbarColor(content.color)
+      }}
+      onMouseLeave={() => {
+        setHovered(false)
+        setNavbarColor("transparent")
+      }}
+      style={{
+        fontWeight: isHovered? "bold" : "normal", 
+        color: !isHovered && (navbarColor==="transparent" || navbarColor==="white")  ? "black" : "white",
+      }}>
+        <NavElement
+          style={{
+            borderBottom: isHovered ? '2px solid black' : 'none'
+          }}
+        >
+          {text}
+          {isHovered && <Overlay content={content} isHovered={isHovered}/>}
+        </NavElement>
+      </NavDiv>
     );
   };
   
@@ -61,11 +65,18 @@ const NavBar = styled.nav`
   font-size: 14px;
 `;
 
+const NavDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+`
+
 const NavElement=styled.span`
   display: flex;
-  align-items: top;
-  height: 60px;
-  margin-top: 40px;
+  height: 20px;
+  margin: 0 20px 0 20px;
+  cursor: pointer;
 `
 
 

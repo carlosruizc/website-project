@@ -6,7 +6,7 @@ import SubsectionText from "./SubsectionText";
 const OverlayContainer = ({ content, isHovered }) => {  
     
     const bgColor = content.color;
-    const sections = content.section;
+    const sections = content.section;    
 
     if (!sections) return null;
 
@@ -16,7 +16,7 @@ const OverlayContainer = ({ content, isHovered }) => {
           {sections.map((section, index) => (
             <Section key={index}>
               <SectionText text={section.title} />
-              {renderSubSections(section.elements)}
+              {renderSubSections(section, content.tab)}
             </Section>
           ))}
         </SectionsContainer>
@@ -24,22 +24,24 @@ const OverlayContainer = ({ content, isHovered }) => {
     ) : null;
 };
 
-const renderSubSections = (elements) => {
+const renderSubSections = (section, tab) => {
     const maxSubSectionsPerColumn = 5; // Maximum number of subsections per column
-    const columns = Math.ceil(elements.length / maxSubSectionsPerColumn);
+    const columns = Math.ceil(section.elements.length / maxSubSectionsPerColumn);
     
     // Create an array of subsections grouped by columns
     const subsectionsByColumn = Array.from({ length: columns }, (_, columnIndex) => (
-        elements.slice(columnIndex * maxSubSectionsPerColumn, (columnIndex + 1) * maxSubSectionsPerColumn)
+        section.elements.slice(columnIndex * maxSubSectionsPerColumn, (columnIndex + 1) * maxSubSectionsPerColumn)
     ));
+
+    
     
     return (
         <SubSectionsContainer>
             {subsectionsByColumn.map((column, columnIndex) => (
                 <SubSectionColumn key={columnIndex}>
                     {column.map((element, elementIndex) => (
-                        <SubSection key={elementIndex}>
-                            <SubsectionText subSection={element.subSection} text={element.text}/>
+                        <SubSection key={elementIndex} >
+                            <SubsectionText tab={tab} subSection={element.subSection} text={element.text}/>
                         </SubSection>
                     ))}
                 </SubSectionColumn>
@@ -55,13 +57,14 @@ const Overlay = styled.div`
   padding: 10px;
   width: 100vw;
   margin-top: 30px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   color: white;
+  z-index: 9999;
 `;
 
 const SectionsContainer = styled.div`
   display: flex;
   overflow-x: auto;
+  padding: 50px 50px 50px 100px;
 `;
 
 const Section = styled.div`
