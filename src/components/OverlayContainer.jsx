@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import SectionText from "./SectionText";
 import SubsectionText from "./SubsectionText";
+import { fadeIn, slideUp } from "../style/animations";
 
 const OverlayContainer = ({ content, isHovered }) => {  
     
@@ -59,12 +60,14 @@ const Overlay = styled.div`
   margin-top: 30px;
   color: white;
   z-index: 9999;
+  animation: ${fadeIn} 1s ease forwards;
 `;
 
 const SectionsContainer = styled.div`
   display: flex;
   overflow-x: auto;
   padding: 50px 50px 50px 100px;
+  animation: ${slideUp} 1s ease forwards;
 `;
 
 const Section = styled.div`

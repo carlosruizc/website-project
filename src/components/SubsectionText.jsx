@@ -37,7 +37,7 @@ const Container = styled.div`
 `;
 
 const ArrowContainer = styled.div`
-  transition: margin 0.3s ease, color 0.3s ease;
+  transition: margin 0.5s ease, color 0.5s ease;
 `
 
 const TextContainer = styled.div`

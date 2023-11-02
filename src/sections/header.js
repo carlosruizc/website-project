@@ -259,8 +259,6 @@ const Header = ({isIndex}) => {
       const scrollY = window.scrollY;
       const scrollThreshold = 100; 
 
-      console.log("Scroll", scrollY);
-
       if (scrollY > prevScrollY) {
         
         if (scrollY > scrollThreshold) {

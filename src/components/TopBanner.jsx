@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { fadeIn, slideUp } from "../style/animations";
 import Button from "./Button";
 
 const TopBanner=()=>{
@@ -13,13 +14,13 @@ const TopBanner=()=>{
                 <SubTitle>Expect</SubTitle>
                 <GradientText>Continuous </GradientText>
                 <GradientText>Security Testing</GradientText>
-                <p>Penetration testing and vulnerability management that finds your
-                        most critical vulnerabilities and tracks improvement over time</p>
+                <Text>Penetration testing and vulnerability management that finds your
+                        most critical vulnerabilities and tracks improvement over time</Text>
                 
-                <div style={{display:"flex", width:"350px", justifyContent:"space-between"}}>
+                <ButtonsContainer style={{display:"flex", width:"350px", justifyContent:"space-between"}}>
                     <Button variant="primary"> TALK TO US NOW</Button>
                     <Button variant="secondary"> SEE US IN ACTION</Button>
-                </div>
+                </ButtonsContainer>
                 
             </div>
         </TopBannerContainer>
@@ -64,17 +65,28 @@ const SubTitle=styled.p`
     font-size: 60px;
     padding:0;
     margin:0;
+    animation: ${slideUp} 1s ease forwards;
 `
 
 const GradientText = styled.p`
-font-size: 7.81vw;
-background: linear-gradient(90deg, #102b51, #0169f9); 
--webkit-background-clip: text;
-color: transparent;
-text-align: left;
-padding: 0;
-margin: 0;
-font-weight: 900;
+    font-size: 7.81vw;
+    background: linear-gradient(90deg, #102b51, #0169f9); 
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+    animation: ${slideUp} 1s ease forwards;
 `
+
+const Text=styled.p`
+    animation: ${fadeIn} 2s ease forwards;
+`
+
+const ButtonsContainer=styled.div`
+    animation: ${fadeIn} 2s ease forwards;
+`
+
 
 export default TopBanner;
