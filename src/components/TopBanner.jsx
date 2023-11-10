@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { fadeIn, slideUp } from "../style/animations";
 import Button from "./Button";
+import CircularProgressBar from "./CircularProgressBar/CircularProgressBar";
 
 const TopBanner=()=>{
     return (
@@ -21,7 +22,9 @@ const TopBanner=()=>{
                     <Button variant="primary"> TALK TO US NOW</Button>
                     <Button variant="secondary"> SEE US IN ACTION</Button>
                 </ButtonsContainer>
-                
+                <ProgressContainer>
+                    <CircularProgressBar value="52" text="Tests Per Year"/>
+                </ProgressContainer>                
             </div>
         </TopBannerContainer>
     )
@@ -88,5 +91,9 @@ const ButtonsContainer=styled.div`
     animation: ${fadeIn} 2s ease forwards;
 `
 
+const ProgressContainer=styled.div`
+    display: flex;
+    height: 16em;
+`
 
 export default TopBanner;
