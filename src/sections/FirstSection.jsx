@@ -12,8 +12,6 @@ import VideoBackground from "../components/VideoBackground"
 import { Link } from "gatsby";
 import StickyBox from "react-sticky-box";
 import { fadeIn, fadeOut } from "../style/animations";
-import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
 import { useMediaQuery } from "react-responsive";
 
 const FirstSection = () => {
@@ -290,153 +288,147 @@ const FirstSection = () => {
                 <TopBannerContainer>
                     <VideoBackground />
                     <RightContainer>
-                        <Fade bottom>
-                            <SectionContainer id="our-story">
-                                <Title>WHAT WE DO</Title>
-                                <SubTitle>The Premier Security Testing Platform</SubTitle>
-                                <p>With a one-off pentest, companies leave themselves vulnerable. Stay ahead of threats with strategic security testing that scales to cover your cloud, APIs, web apps, host infrastructure and mobile.</p>
-                                <Button variant="primary">GET THE DETAILS</Button>
-                            </SectionContainer>
-                        </Fade>
-                        <Fade bottom>
-                            <SectionContainer id="platform">
-                                <Title>THE PLATFORM</Title>
-                                <SubTitle>Delivering Continuous and Scalable Security Testing</SubTitle>
-                                <p>Expect an adversarial penetration testing experience that can be launched in days, not weeks, and reduces your risk over time.</p>
-                                <Button variant="primary">HOW IT WORKS</Button>
-                            </SectionContainer>
-                        </Fade>
-                        <Fade bottom>
-                            <SectionContainerDouble>
 
-                                <Carousel
-                                    value={features}
-                                    numVisible={1}
-                                    numScroll={1}
-                                    orientation="vertical"
-                                    circular
-                                    autoplayInterval={3000}
-                                    itemTemplate={featureTemplate}
-                                    style={{ width: isTablet ? "75%" : "50%" }}
-                                    prevIcon="null"
-                                    nextIcon="null"
-                                    verticalViewPortHeight={isMobile ? "150px" : isTablet ? "300px" : "350px"}
-                                />
-                                {!isTablet &&
+                        <SectionContainer id="our-story">
+                            <Title>WHAT WE DO</Title>
+                            <SubTitle>The Premier Security Testing Platform</SubTitle>
+                            <p>With a one-off pentest, companies leave themselves vulnerable. Stay ahead of threats with strategic security testing that scales to cover your cloud, APIs, web apps, host infrastructure and mobile.</p>
+                            <Button variant="primary">GET THE DETAILS</Button>
+                        </SectionContainer>
 
-                                    <CountContainer>
-                                        <div >
-                                            <VerticalTextBT><strong>1</strong>-7</VerticalTextBT>
-                                            <VerticalTextBT></VerticalTextBT>
-                                        </div>
-                                        <VerticalLine />
-                                    </CountContainer>
+                        <SectionContainer id="platform">
+                            <Title>THE PLATFORM</Title>
+                            <SubTitle>Delivering Continuous and Scalable Security Testing</SubTitle>
+                            <p>Expect an adversarial penetration testing experience that can be launched in days, not weeks, and reduces your risk over time.</p>
+                            <Button variant="primary">HOW IT WORKS</Button>
+                        </SectionContainer>
 
-                                }
-                                <div style={{ width: "50%" }}>
-                                    <BoldText>Penetration Testing</BoldText>
-                                    <BoldText>Vulnerability Management</BoldText>
-                                    <BoldText>Reporting & Real Time Analytics</BoldText>
-                                    <BoldText>Testing Controls</BoldText>
-                                    <BoldText>API & Integrations</BoldText>
-                                    <BoldText>Operations & Support</BoldText>
-                                    <BoldText>Global Community of Talent</BoldText>
-                                </div>
-                            </SectionContainerDouble>
-                        </Fade>
-                    </RightContainer>
-                </TopBannerContainer>
+                        <SectionContainerDouble>
 
-                <Fade bottom>
-                    <ClientsCarousel />
-                </Fade>
-                <Fade bottom>
-                    <RedContainer id="red-team">
-                        <MapContainer>
-                            <TextContainer>
-                                <WhiteTitle>THE SYNACK RED TEAM</WhiteTitle>
-                                <WhiteSubTitle>Expect Elite Talent</WhiteSubTitle>
-                                <WhiteText>The Synack Red Team has you covered. Our elite, vetted community of security researchers brings a diverse set of skills to every test to support your teams’ pentesting initiatives.</WhiteText>
-                                <ButtonsContainer>
-                                    <Button variant="black" >JOIN THE READ TEAM</Button>
-                                    <Button variant="white" >LEARN MORE</Button>
-                                </ButtonsContainer>
-                            </TextContainer>
                             <Carousel
-                                value={talent}
+                                value={features}
                                 numVisible={1}
                                 numScroll={1}
                                 orientation="vertical"
                                 circular
                                 autoplayInterval={3000}
-                                itemTemplate={talentTemplate}
-                                style={{ width: "250px", marginRight: "100px", height: "450px", display: "flex", alignItems: "center", justifyContent: "center" }}
+                                itemTemplate={featureTemplate}
+                                style={{ width: isTablet ? "75%" : "50%" }}
                                 prevIcon="null"
                                 nextIcon="null"
-                                verticalViewPortHeight="350px" />
-                        </MapContainer>
-                    </RedContainer>
-                </Fade>
-                <Fade bottom>
-                    <UseCaseContainer id="solutions">
-                        <Title>USE CASES</Title>
-                        <SubTitle><strong><BlueText>Expect</BlueText></strong> solutions that scale</SubTitle>
-                        <p>Synack provides the broadest coverage of security testing for company assets and infrastructure.</p>
-                        <Zoom left cascade>
-                            <CasesContainer>
-                                {cases.map(caseItem => (caseTemplate(caseItem)))}
-                            </CasesContainer>
-                        </Zoom>
-                    </UseCaseContainer>
-                </Fade>
-                <Fade bottom>
-                    <DemoContainer id="demo">
-                        <ShapeContainer>
-                            <Title>DEMO</Title>
-                            <SubTitle>Learn how it <strong><BlueText>works</BlueText></strong></SubTitle>
-                            <div style={{ display: "flex", width: "100%", justifyContent: "center" }}>
-                                {isTablet
-                                    ?
-                                    <VideoContainer style={{ width: "80%" }}>
-                                        <Iframe src={videos[0].video} />
-                                        <DemoText>
-                                            <SubTitle style={{ width: "40%" }}><strong>{videos[0].item}</strong></SubTitle>
-                                            <p style={{ width: "60%" }}>{videos[0].text}</p>
-                                        </DemoText>
-                                    </VideoContainer>
-                                    :
+                                verticalViewPortHeight={isMobile ? "150px" : isTablet ? "300px" : "350px"}
+                            />
+                            {!isTablet &&
 
-                                    <Carousel
-                                        value={videos}
-                                        numVisible={1}
-                                        numScroll={1}
-                                        circular
-                                        autoplayInterval={3500}
-                                        itemTemplate={videoTemplate}
-                                        nextIcon={NextButton}
-                                        prevIcon={PrevButton}
-                                        style={{ width: "100%", justifyContent: "center" }}
-                                    />
+                                <CountContainer>
+                                    <div >
+                                        <VerticalTextBT><strong>1</strong>-7</VerticalTextBT>
+                                        <VerticalTextBT></VerticalTextBT>
+                                    </div>
+                                    <VerticalLine />
+                                </CountContainer>
 
-                                }
+                            }
+                            <div style={{ width: "50%" }}>
+                                <BoldText>Penetration Testing</BoldText>
+                                <BoldText>Vulnerability Management</BoldText>
+                                <BoldText>Reporting & Real Time Analytics</BoldText>
+                                <BoldText>Testing Controls</BoldText>
+                                <BoldText>API & Integrations</BoldText>
+                                <BoldText>Operations & Support</BoldText>
+                                <BoldText>Global Community of Talent</BoldText>
                             </div>
-                        </ShapeContainer>
-                    </DemoContainer>
-                </Fade>
-                <Fade bottom>
-                    <div id="insights" style={{ display: "flex", justifyContent: "center" }}>
-                        <InsightsCarousel />
-                    </div>
-                </Fade>
-                <Fade bottom>
-                    <BlueContainer id="blue-container">
-                        <PowerContainer>
-                            <BlueTitle><strong>Expect Synack</strong></BlueTitle>
-                            <BlueTitle>Ready to get started?</BlueTitle>
-                            <Button variant="white-blue" >CONTACT US</Button>
-                        </PowerContainer>
-                    </BlueContainer>
-                </Fade>
+                        </SectionContainerDouble>
+
+                    </RightContainer>
+                </TopBannerContainer>
+
+
+                <ClientsCarousel />
+
+
+                <RedContainer id="red-team">
+                    <MapContainer>
+                        <TextContainer>
+                            <WhiteTitle>THE SYNACK RED TEAM</WhiteTitle>
+                            <WhiteSubTitle>Expect Elite Talent</WhiteSubTitle>
+                            <WhiteText>The Synack Red Team has you covered. Our elite, vetted community of security researchers brings a diverse set of skills to every test to support your teams’ pentesting initiatives.</WhiteText>
+                            <ButtonsContainer>
+                                <Button variant="black" >JOIN THE READ TEAM</Button>
+                                <Button variant="white" >LEARN MORE</Button>
+                            </ButtonsContainer>
+                        </TextContainer>
+                        <Carousel
+                            value={talent}
+                            numVisible={1}
+                            numScroll={1}
+                            orientation="vertical"
+                            circular
+                            autoplayInterval={3000}
+                            itemTemplate={talentTemplate}
+                            style={{ width: "250px", marginRight: "100px", height: "450px", display: "flex", alignItems: "center", justifyContent: "center" }}
+                            prevIcon="null"
+                            nextIcon="null"
+                            verticalViewPortHeight="350px" />
+                    </MapContainer>
+                </RedContainer>
+
+                <UseCaseContainer id="solutions">
+                    <Title>USE CASES</Title>
+                    <SubTitle><strong><BlueText>Expect</BlueText></strong> solutions that scale</SubTitle>
+                    <p>Synack provides the broadest coverage of security testing for company assets and infrastructure.</p>
+
+                    <CasesContainer>
+                        {cases.map(caseItem => (caseTemplate(caseItem)))}
+                    </CasesContainer>
+
+                </UseCaseContainer>
+
+                <DemoContainer id="demo">
+                    <ShapeContainer>
+                        <Title>DEMO</Title>
+                        <SubTitle>Learn how it <strong><BlueText>works</BlueText></strong></SubTitle>
+                        <div style={{ display: "flex", width: "100%", justifyContent: "center" }}>
+                            {isTablet
+                                ?
+                                <VideoContainer style={{ width: "80%" }}>
+                                    <Iframe src={videos[0].video} />
+                                    <DemoText>
+                                        <SubTitle style={{ width: "40%" }}><strong>{videos[0].item}</strong></SubTitle>
+                                        <p style={{ width: "60%" }}>{videos[0].text}</p>
+                                    </DemoText>
+                                </VideoContainer>
+                                :
+
+                                <Carousel
+                                    value={videos}
+                                    numVisible={1}
+                                    numScroll={1}
+                                    circular
+                                    autoplayInterval={3500}
+                                    itemTemplate={videoTemplate}
+                                    nextIcon={NextButton}
+                                    prevIcon={PrevButton}
+                                    style={{ width: "100%", justifyContent: "center" }}
+                                />
+
+                            }
+                        </div>
+                    </ShapeContainer>
+                </DemoContainer>
+
+                <div id="insights" style={{ display: "flex", justifyContent: "center" }}>
+                    <InsightsCarousel />
+                </div>
+
+                <BlueContainer id="blue-container">
+                    <PowerContainer>
+                        <BlueTitle><strong>Expect Synack</strong></BlueTitle>
+                        <BlueTitle>Ready to get started?</BlueTitle>
+                        <Button variant="white-blue" >CONTACT US</Button>
+                    </PowerContainer>
+                </BlueContainer>
+
 
             </div>
 

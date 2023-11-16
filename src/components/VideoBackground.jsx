@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import ReactPlayer from "react-player"
-import BackgroundVideo from "../../public/videos/BackgroundVideo.mp4"
+import BackgroundVideo from "../data/BackgroundVideo.mp4"
 
 const VideoBackground = () => {
   return (
