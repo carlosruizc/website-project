@@ -10,6 +10,7 @@
     "d3-ease": "^3.0.1",
     "gatsby": "^5.12.4",
     "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-manifest": "^5.12.0",
     "gatsby-plugin-sharp": "^5.12.0",
@@ -25,7 +26,10 @@
     "react-helmet": "^6.1.0",
     "react-move": "^6.5.0",
     "react-player": "^2.13.0",
+    "react-responsive": "^9.0.2",
+    "react-reveal": "^1.2.2",
     "react-router": "^6.18.0",
+    "react-sticky-box": "^2.0.5",
     "styled-components": "^6.0.8"
   },
   "devDependencies": {

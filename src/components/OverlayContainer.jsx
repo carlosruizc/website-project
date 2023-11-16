@@ -4,51 +4,50 @@ import SectionText from "./SectionText";
 import SubsectionText from "./SubsectionText";
 import { fadeIn, slideUp } from "../style/animations";
 
-const OverlayContainer = ({ content, isHovered }) => {  
-    
-    const bgColor = content.color;
-    const sections = content.section;    
+const OverlayContainer = ({ content, isHovered }) => {
 
-    if (!sections) return null;
+  const bgColor = content.color;
+  const sections = content.section;
 
-    return isHovered ? (
-      <Overlay bgcolor={bgColor}>
-        <SectionsContainer>
-          {sections.map((section, index) => (
-            <Section key={index}>
-              <SectionText text={section.title} />
-              {renderSubSections(section, content.tab)}
-            </Section>
-          ))}
-        </SectionsContainer>
-      </Overlay>
-    ) : null;
+  if (!sections) return null;
+
+  return isHovered ? (
+    <Overlay bgcolor={bgColor}>
+      <SectionsContainer>
+        {sections.map((section, index) => (
+          <Section key={index}>
+            <SectionText text={section.title} />
+            {renderSubSections(section, content.tab)}
+          </Section>
+        ))}
+      </SectionsContainer>
+    </Overlay>
+  ) : null;
 };
 
 const renderSubSections = (section, tab) => {
-    const maxSubSectionsPerColumn = 5; // Maximum number of subsections per column
-    const columns = Math.ceil(section.elements.length / maxSubSectionsPerColumn);
-    
-    // Create an array of subsections grouped by columns
-    const subsectionsByColumn = Array.from({ length: columns }, (_, columnIndex) => (
-        section.elements.slice(columnIndex * maxSubSectionsPerColumn, (columnIndex + 1) * maxSubSectionsPerColumn)
-    ));
+  const maxSubSectionsPerColumn = 5;
+  const columns = Math.ceil(section.elements.length / maxSubSectionsPerColumn);
 
-    
-    
-    return (
-        <SubSectionsContainer>
-            {subsectionsByColumn.map((column, columnIndex) => (
-                <SubSectionColumn key={columnIndex}>
-                    {column.map((element, elementIndex) => (
-                        <SubSection key={elementIndex} >
-                            <SubsectionText tab={tab} subSection={element.subSection} text={element.text}/>
-                        </SubSection>
-                    ))}
-                </SubSectionColumn>
-            ))}
-        </SubSectionsContainer>
-    );
+  const subsectionsByColumn = Array.from({ length: columns }, (_, columnIndex) => (
+    section.elements.slice(columnIndex * maxSubSectionsPerColumn, (columnIndex + 1) * maxSubSectionsPerColumn)
+  ));
+
+
+
+  return (
+    <SubSectionsContainer>
+      {subsectionsByColumn.map((column, columnIndex) => (
+        <SubSectionColumn key={columnIndex}>
+          {column.map((element, elementIndex) => (
+            <SubSection key={elementIndex} >
+              <SubsectionText tab={tab} subSection={element.subSection} text={element.text} />
+            </SubSection>
+          ))}
+        </SubSectionColumn>
+      ))}
+    </SubSectionsContainer>
+  );
 };
 
 const Overlay = styled.div`

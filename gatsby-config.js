@@ -53,5 +53,11 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-anchor-links`,
+      options: {
+        offset: 0 // optional offset value to adjust scroll position
+      },
+    },
   ],
 }

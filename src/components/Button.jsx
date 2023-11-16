@@ -29,7 +29,7 @@ const Button = ({ children, variant, onClick }) => {
     case 'secondary':
       buttonStyles = {
         backgroundColor: '#ececec',
-        color: '#007aff',        
+        color: '#007aff',
         height: '45px',
       };
       break;
@@ -46,25 +46,25 @@ const Button = ({ children, variant, onClick }) => {
         height: '30px',
         marginTop: '10px',
       };
-      break;  
-      case 'white':
+      break;
+    case 'white':
       buttonStyles = {
         backgroundColor: 'white',
         color: 'black',
         height: '30px',
         marginTop: '10px',
       };
-      break;  
-      case 'white-blue':
+      break;
+    case 'white-blue':
       buttonStyles = {
         backgroundColor: 'white',
         color: 'blue',
-        height: '30px',
+        minHeight: '30px',
         marginTop: '10px',
         width: "fit-content",
       };
-      break;  
-      case 'gray':
+      break;
+    case 'gray':
       buttonStyles = {
         backgroundColor: 'gray',
         color: 'white',
@@ -72,7 +72,22 @@ const Button = ({ children, variant, onClick }) => {
         marginTop: '10px',
         width: "fit-content",
       };
-      break;  
+      break;
+    case 'menu':
+      buttonStyles = {
+        width: "30px",
+        height: "30px",
+        borderRadius: "50%",
+        backgroundColor: "#007aff",
+        color: "white",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        border: "none",
+        padding: "5px",
+      };
+      break;
     default:
       buttonStyles = {
         backgroundColor: 'gray',

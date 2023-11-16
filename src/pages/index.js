@@ -4,7 +4,6 @@ import Seo from "../components/seo"
 import Header from "../sections/header"
 import FirstSection from "../sections/FirstSection"
 import Footer from "../sections/Footer"
-import { Router } from "react-router"
 
 
 

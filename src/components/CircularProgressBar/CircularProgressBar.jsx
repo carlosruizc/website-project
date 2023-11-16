@@ -30,9 +30,9 @@ const CircularProgressBar = ({value, text}) => {
 
       function Wrapper(props) {
         return (
-          <div style={{ marginBottom: 80 }}>
-            <div style={{ marginTop: 30, display: "flex" }}>
-              <div style={{ width: "15em", paddingRight: 30 }}>{props.children}</div>
+          <div style={{ height: "100%" }}>
+            <div style={{ marginTop: 30, display: "flex", height: "100%", }}>
+              <div style={{ width: "15em", paddingRight: 30, height: "100%", }}>{props.children}</div>
              
             </div>
           </div>
@@ -66,8 +66,8 @@ const CircularProgressBar = ({value, text}) => {
                     height: `${14}%`
                 }}
                 />
-                <p style={{margin:"0", fontSize:"4.5em", fontWeight:"900", background: "linear-gradient(90deg, #102b51, #0169f9)", WebkitBackgroundClip: "text", color: "transparent"}}><strong>{Math.round(value*percentage/100)}K</strong></p>
-                <p style={{fontSize:"12px", margin:"0"}}>{text}</p>
+                <p style={{margin:"0", fontSize:"4em", fontWeight:"900", background: "linear-gradient(90deg, #102b51, #0169f9)", WebkitBackgroundClip: "text", color: "transparent"}}><strong>{Math.round(value*percentage/100)}K</strong></p>
+                <p style={{display:"flex", justifyContent:"center", textAlign:"center",fontSize:"0.8em", margin:"0", width:"50%"}}>{text}</p>
                 </CircularProgressbarWithChildren>
                 )}
             </AnimatedProgressProvider>
