@@ -8,7 +8,7 @@ import { useMediaQuery } from "react-responsive";
 const clients = [
     {
         item: "0",
-        src: "/static/clients/allianz-logo.webp"
+        src: "/static/clients/allianz-logo.svg"
     },
     {
         item: "1",
@@ -56,7 +56,7 @@ const clients = [
     },
     {
         item: "12",
-        src: "/static/clients/freshfields-logo-vert.svg"
+        src: "/static/clients/freshfields-logo.svg"
     },
     {
         item: "13",

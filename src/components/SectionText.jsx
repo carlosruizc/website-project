@@ -16,7 +16,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.h3`
-  font-size: 16px;
+  font-size: 1rem;
   margin-right: 10px;
 `;
 

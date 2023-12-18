@@ -3,21 +3,29 @@ import styled from 'styled-components';
 import OverlayContainer from './OverlayContainer';
 import Button from './Button';
 import { useMediaQuery } from 'react-responsive';
+import { navigate } from "gatsby"
 import { slideInAnimation } from '../style/animations';
+import MenuContainer from './MenuContainer';
+import Close from '../icons/Close';
+import ArrowDown from '../icons/ArrowDown';
 
 const Navigation = ({ tabContent, navbarColor, setNavbarColor }) => {
 
   const isTablet = useMediaQuery({ query: "(max-width: 768px)" });
   const [showMobileNavbar, setShowMobileNavbar] = useState(false);
+  const [selectedSection, setSelectedSection] = useState(null);
 
   const NavItem = ({ text, content, setNavbarColor }) => {
     const [isHovered, setHovered] = useState(false);
 
+
     return (
-      <NavDiv onMouseEnter={() => {
-        setHovered(true)
-        setNavbarColor(content.color)
-      }}
+      <NavDiv
+        key={content.tab}
+        onMouseEnter={() => {
+          setHovered(true)
+          setNavbarColor(content.color)
+        }}
         onMouseLeave={() => {
           setHovered(false)
           setNavbarColor("transparent")
@@ -27,6 +35,7 @@ const Navigation = ({ tabContent, navbarColor, setNavbarColor }) => {
           color: !isHovered && (navbarColor === "transparent" || navbarColor === "white") ? "black" : "white",
         }}>
         <NavElement
+          key={content.title}
           style={{
             borderBottom: isHovered ? '2px solid black' : 'none'
           }}
@@ -38,6 +47,16 @@ const Navigation = ({ tabContent, navbarColor, setNavbarColor }) => {
     );
   };
 
+  const showSections = (content) => {
+    if (typeof content.section === "undefined") {
+      setSelectedSection(null);
+      navigate(`/synack/${content.tab}`)
+      setShowMobileNavbar(false)
+    } else {
+      setSelectedSection(content.tab === selectedSection ? null : content.tab)
+    }
+  }
+
   const Overlay = ({ content, isHovered }) => {
     return (
       <OverlayContainer content={content} isHovered={isHovered} />
@@ -46,7 +65,9 @@ const Navigation = ({ tabContent, navbarColor, setNavbarColor }) => {
 
   const handleOpenMenu = () => {
     setShowMobileNavbar(!showMobileNavbar);
+    setSelectedSection(null)
   }
+
 
   if (isTablet) {
     return (
@@ -55,7 +76,7 @@ const Navigation = ({ tabContent, navbarColor, setNavbarColor }) => {
           ?
           <div style={{ padding: "20px 40px" }}>
             <Button variant="menu" onClick={handleOpenMenu}>
-              <p style={{ letterSpacing: 0, fontWeight: 200, fontSize: "large" }}>X</p>
+              <Close />
             </Button>
           </div>
           :
@@ -70,8 +91,25 @@ const Navigation = ({ tabContent, navbarColor, setNavbarColor }) => {
         {showMobileNavbar &&
           <MobileNavBar>
             {tabContent.map((item) => (
-              <div>
-                <p>{item.tab}</p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  backgroundColor: selectedSection === item.tab ? item.color : null,
+                  color: selectedSection === item.tab ? "white" : null,
+                  borderBottom: "1px solid #F8F8F8",
+                }}>
+                <button style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "90%", border: "none", backgroundColor: "transparent", color: selectedSection === item.tab ? "white" : null, }} onClick={() => showSections(item)} >
+                  <p key={item.tab} style={{ paddingLeft: "2em" }}>
+                    {item.tab}
+                  </p>
+                  {selectedSection !== item.tab && typeof item.section !== "undefined" &&
+                    <ArrowDown key={item.tab + "arrow"} />
+                  }
+                </button>
+
+                {selectedSection === item.tab &&
+                  <MenuContainer content={item} tab={item.tab} setShowMobileNavbar={setShowMobileNavbar} />}
               </div>
             ))}
           </MobileNavBar>
@@ -138,7 +176,6 @@ const MobileNavBar = styled.div`
   background-color: white;
   width: 100%;
   left: 0;
-  padding-left: 20px;
   animation: ${slideInAnimation} 0.5s ease-in-out;
 `
 

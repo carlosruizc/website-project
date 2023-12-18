@@ -16,6 +16,7 @@ import { useMediaQuery } from "react-responsive";
 
 const FirstSection = () => {
     const [activeSection, setActiveSection] = useState("");
+    const [activeIndex, setActiveIndex] = useState(0);
     const isMobile = useMediaQuery({ query: "(max-width: 520px)" });
     const isTablet = useMediaQuery({ query: "(max-width: 768px)" });
 
@@ -269,7 +270,9 @@ const FirstSection = () => {
         )
     }
 
-
+    const onCarouselPageChange = (event) => {
+        setActiveIndex(event.page);
+    };
 
     return (
         <>
@@ -307,6 +310,7 @@ const FirstSection = () => {
 
                             <Carousel
                                 value={features}
+                                onPageChange={onCarouselPageChange}
                                 numVisible={1}
                                 numScroll={1}
                                 orientation="vertical"
@@ -322,7 +326,7 @@ const FirstSection = () => {
 
                                 <CountContainer>
                                     <div >
-                                        <VerticalTextBT><strong>1</strong>-7</VerticalTextBT>
+                                        <VerticalTextBT><strong>{activeIndex + 1}</strong>-7</VerticalTextBT>
                                         <VerticalTextBT></VerticalTextBT>
                                     </div>
                                     <VerticalLine />
@@ -330,13 +334,14 @@ const FirstSection = () => {
 
                             }
                             <div style={{ width: "50%" }}>
-                                <BoldText>Penetration Testing</BoldText>
-                                <BoldText>Vulnerability Management</BoldText>
-                                <BoldText>Reporting & Real Time Analytics</BoldText>
-                                <BoldText>Testing Controls</BoldText>
-                                <BoldText>API & Integrations</BoldText>
-                                <BoldText>Operations & Support</BoldText>
-                                <BoldText>Global Community of Talent</BoldText>
+                                {features.map((feature, index) => (
+                                    index === activeIndex
+                                        ?
+                                        <BlueText style={{ fontSize: "1.5rem" }}><strong>{feature.item}</strong></BlueText>
+                                        :
+                                        <p>{feature.item}</p>
+
+                                ))}
                             </div>
                         </SectionContainerDouble>
 
