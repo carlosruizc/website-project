@@ -4,49 +4,8 @@ import styled from "styled-components";
 import NextButton from "../icons/NextButton";
 import PrevButton from "../icons/PrevButton";
 import { useMediaQuery } from "react-responsive";
+import { clients } from "../data/Content";
 
-const clients = [
-    {
-        item: "0",
-        src: "/images/clients/allianz-logo.svg"
-    },
-    {
-        item: "1",
-        src: "/images/clients/agilence-logo-blk.webp"
-    },
-    {
-        item: "2",
-        src: "/images/clients/cbi-health-logo-blk.webp"
-    },
-    {
-        item: "3",
-        src: "/images/clients/everlywell-logo.webp"
-    },
-    {
-        item: "4",
-        src: "/images/clients/hughes-logo-blk.webp"
-    },
-    {
-        item: "5",
-        src: "/images/clients/impact-logo-blk.webp"
-    },
-    {
-        item: "6",
-        src: "/images/clients/mantech-logo-blk.webp"
-    },
-    {
-        item: "7",
-        src: "/images/clients/noy-logo.webp"
-    },
-    {
-        item: "8",
-        src: "/images/clients/veem-logo-blk.webp"
-    },
-    {
-        item: "9",
-        src: "/images/clients/venafi-logo-blk.webp"
-    },
-]
 
 const ClientsCarousel = () => {
 

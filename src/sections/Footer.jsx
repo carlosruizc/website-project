@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <div>
             <FooterContainer>
-                <Logo src="/images/logo.svg" />
+                <Logo src="/static/images/logo.svg" />
                 <FooterColumns>
                     {footerContent.map(column => (
                         <Column key={column.title}>

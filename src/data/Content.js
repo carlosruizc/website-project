@@ -284,37 +284,37 @@ export const footerContent = [
 export const features = [
     {
         item: "Penetration Testing",
-        img: "/images/features/penetrationtesting.webp",
+        img: "/static/images/features/penetrationtesting.webp",
         text: "Continuous pentesting performed by the Synack Red Team on cloud, web apps, host infrastructure, APIs and mobile."
     },
     {
         item: "Vulnerability Management",
-        img: "/images/features/vulnarabilitymanagement.webp",
+        img: "/static/images/features/vulnarabilitymanagement.webp",
         text: "Discover, assess, remediate and verify vulnerability patches."
     },
     {
         item: "Reporting & Real Time Analytics",
-        img: "/images/features/realtimeanalytics.webp",
+        img: "/static/images/features/realtimeanalytics.webp",
         text: "Discover, assess, remediate and verify vulnerability patches."
     },
     {
         item: "Testing Controls",
-        img: "/images/features/testingcontrols.webp",
+        img: "/static/images/features/testingcontrols.webp",
         text: "Complete visibility and control over all researchers and testing across your environment."
     },
     {
         item: "API & Integrations",
-        img: "/images/features/apiintegrations.webp",
+        img: "/static/images/features/apiintegrations.webp",
         text: "Improve responsiveness, triage and remediate vulnerabilities with integrated workflows."
     },
     {
         item: "Operations & Support",
-        img: "/images/features/operationssupport.webp",
+        img: "/static/images/features/operationssupport.webp",
         text: "Dedicated teams will verify your exploitable vulnerabilities, prioritize testing activities and scope your attack surface."
     },
     {
         item: "Global Community of Talent",
-        img: "/images/features/globalcommunity.webp",
+        img: "/static/images/features/globalcommunity.webp",
         text: "Access our global team of security researchers with a diverse set of skills – all through the platform."
     },
 ]
@@ -325,57 +325,57 @@ export const talent = [
     {
         name: "Busra",
         country: "United States",
-        avatar: "/images/talent/busra.webp",
+        avatar: "/static/images/talent/busra.webp",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/images/badges/artemis_3-1.svg",
-        badge2: "/images/badges/circle_of_trust-1.svg",
-        badge3: "/images/badges/envoy-1.svg",
-        badge4: "/images/badges/hero-1.svg",
-        badge5: "/images/badges/polygon-empty.webp",
+        badge1: "/static/images/badges/artemis_3-1.svg",
+        badge2: "/static/images/badges/circle_of_trust-1.svg",
+        badge3: "/static/images/badges/envoy-1.svg",
+        badge4: "/static/images/badges/hero-1.svg",
+        badge5: "/static/images/badges/polygon-empty.webp",
     },
     {
         name: "Ozgur",
-        avatar: "/images/talent/ozgur.webp",
+        avatar: "/static/images/talent/ozgur.webp",
         country: "Turkey",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/images/badges/artemis_3-1.svg",
-        badge2: "/images/badges/circle_of_trust-1.svg",
-        badge3: "/images/badges/envoy-1.svg",
-        badge4: "/images/badges/hero-1.svg",
-        badge5: "/images/badges/polygon-empty.webp",
+        badge1: "/static/images/badges/artemis_3-1.svg",
+        badge2: "/static/images/badges/circle_of_trust-1.svg",
+        badge3: "/static/images/badges/envoy-1.svg",
+        badge4: "/static/images/badges/hero-1.svg",
+        badge5: "/static/images/badges/polygon-empty.webp",
     },
     {
         name: "Adam Logue",
         country: "United States",
-        avatar: "/images/talent/adam.webp",
+        avatar: "/static/images/talent/adam.webp",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/images/badges/guardian_of_trust-2.svg",
-        badge2: "/images/badges/srt_of_the_year-1.svg",
-        badge3: "/images/badges/SRT-of-the-month.svg",
-        badge4: "/images/badges/titan.svg",
-        badge5: "/images/badges/polygon-empty.webp",
+        badge1: "/static/images/badges/guardian_of_trust-2.svg",
+        badge2: "/static/images/badges/srt_of_the_year-1.svg",
+        badge3: "/static/images/badges/SRT-of-the-month.svg",
+        badge4: "/static/images/badges/titan.svg",
+        badge5: "/static/images/badges/polygon-empty.webp",
     },
     {
         name: "Magic Sam",
         country: "United States",
-        avatar: "/images/talent/magics.webp",
+        avatar: "/static/images/talent/magics.webp",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/images/badges/artemis_3-1.svg",
-        badge2: "/images/badges/circle_of_trust-1.svg",
-        badge3: "/images/badges/guardian_of_trust-2.svg",
-        badge4: "/images/badges/polygon-empty.webp",
-        badge5: "/images/badges/polygon-empty.webp",
+        badge1: "/static/images/badges/artemis_3-1.svg",
+        badge2: "/static/images/badges/circle_of_trust-1.svg",
+        badge3: "/static/images/badges/guardian_of_trust-2.svg",
+        badge4: "/static/images/badges/polygon-empty.webp",
+        badge5: "/static/images/badges/polygon-empty.webp",
     },
     {
         name: "niksthehacker",
         country: "India",
-        avatar: "/images/talent/niks.webp",
+        avatar: "/static/images/talent/niks.webp",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/images/badges/srt_of_the_year-1.svg",
-        badge2: "/images/badges/SRT-of-the-month.svg",
-        badge3: "/images/badges/envoy-1.svg",
-        badge4: "/images/badges/hero-1.svg",
-        badge5: "/images/badges/titan.svg",
+        badge1: "/static/images/badges/srt_of_the_year-1.svg",
+        badge2: "/static/images/badges/SRT-of-the-month.svg",
+        badge3: "/static/images/badges/envoy-1.svg",
+        badge4: "/static/images/badges/hero-1.svg",
+        badge5: "/static/images/badges/titan.svg",
     },
 
 ]
@@ -383,27 +383,27 @@ export const talent = [
 export const cases = [
     {
         item: "Penetration Testing",
-        img: "/images/cases/penetration-testing.svg",
+        img: "/static/images/cases/penetration-testing.svg",
     },
     {
         item: "API Security Testing",
-        img: "/images/cases/api-security-testing.svg",
+        img: "/static/images/cases/api-security-testing.svg",
     },
     {
         item: "Application Security Testing",
-        img: "/images/cases/application-security-testing.svg",
+        img: "/static/images/cases/application-security-testing.svg",
     },
     {
         item: "Cloud Security Testing",
-        img: "/images/cases/cloud-security.svg",
+        img: "/static/images/cases/cloud-security.svg",
     },
     {
         item: "Testing for Compliance",
-        img: "/images/cases/compliance.svg",
+        img: "/static/images/cases/compliance.svg",
     },
     {
         item: "Bridging the Cyber Talent Gap",
-        img: "/images/cases/talent-gap.svg",
+        img: "/static/images/cases/talent-gap.svg",
     },
 ]
 
@@ -427,5 +427,48 @@ export const videos = [
         item: "Synack UnPlugged",
         text: "Hear cybersecurity executives and experts share their unfiltered take on some of the latest trends in the industry. ",
         video: "https://www.youtube.com/embed/N-yDyAwli6k",
+    },
+]
+
+export const clients = [
+    {
+        item: "0",
+        src: "../static/images/clients/allianz-logo.webp"
+    },
+    {
+        item: "1",
+        src: "/static/images/clients/agilence-logo-blk.webp"
+    },
+    {
+        item: "2",
+        src: "/static/images/clients/cbi-health-logo-blk.webp"
+    },
+    {
+        item: "3",
+        src: "/static/images/clients/everlywell-logo.webp"
+    },
+    {
+        item: "4",
+        src: "/static/images/clients/hughes-logo-blk.webp"
+    },
+    {
+        item: "5",
+        src: "/static/images/clients/impact-logo-blk.webp"
+    },
+    {
+        item: "6",
+        src: "/static/images/clients/mantech-logo-blk.webp"
+    },
+    {
+        item: "7",
+        src: "/static/images/clients/noy-logo.webp"
+    },
+    {
+        item: "8",
+        src: "/static/images/clients/veem-logo-blk.webp"
+    },
+    {
+        item: "9",
+        src: "/static/images/clients/venafi-logo-blk.webp"
     },
 ]

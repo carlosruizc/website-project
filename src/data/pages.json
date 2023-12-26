@@ -23,17 +23,17 @@
             "maincards":[
                 {
                     "title":"Scalable Testing Programs",
-                    "img":"/images/cases/penetration-testing.svg",
+                    "img":"/static/images/cases/penetration-testing.svg",
                     "text":"Test at scale from a single to thousands of assets through harnessing a vetted community of researchers and smart technology"
                 },
                 {
                     "title":"Security Performance Quantified",
-                    "img":"/images/cases/penetration-testing.svg",
+                    "img":"/static/images/cases/penetration-testing.svg",
                     "text":"Board-level insights and scores that help you drive initiatives, stay within budget and minimize risk in order to enable the business and ensure business continuity"
                 },
                 {
                     "title":"Remediate Faster",
-                    "img":"/images/cases/penetration-testing.svg",
+                    "img":"/static/images/cases/penetration-testing.svg",
                     "text":"Speed up remediation timelines from months to days or weeks through patch verification, role-based access control, APIs and integrations"
                 }
             ]
@@ -53,32 +53,32 @@
             "maincards":[
                 {
                     "title":"Continuous Testing to Reduce Risk Over Time",
-                    "img":"/images/cases/penetration-testing.svg",
+                    "img":"/static/images/cases/penetration-testing.svg",
                     "text":"Vulnerabilities across the attack surface can emerge at any time. Test daily, not once a year, to improve your posture over time."
                 },
                 {
                     "title":"Discover Root Causes of Vulnerabilities ",
-                    "img":"/images/cases/penetration-testing.svg",
+                    "img":"/static/images/cases/penetration-testing.svg",
                     "text":"See security trends across vulnerabilities, identify root causes and materially improve your security posture."
                 },
                 {
                     "title":"Fast and Efficient Pentesting",
-                    "img":"/images/cases/penetration-testing.svg",
+                    "img":"/static/images/cases/penetration-testing.svg",
                     "text":"Launch tests in days, not weeks, with on-demand testing and activation of the Synack Red Team."
                 },
                 {
                     "title":"Reporting and Actionable Insights",
-                    "img":"/images/cases/penetration-testing.svg",
+                    "img":"/static/images/cases/penetration-testing.svg",
                     "text":"Synack allows for workplace collaboration with customizable reporting, integrations and role-based access controls."
                 },
                 {
                     "title":"Total Visibility",
-                    "img":"/images/cases/penetration-testing.svg",
+                    "img":"/static/images/cases/penetration-testing.svg",
                     "text":"Get a clear view of vulnerabilities, testing traffic, remediation status and detailed reports for proof-of-work."
                 },
                 {
                     "title":"Reduce False Positives",
-                    "img":"/images/cases/penetration-testing.svg",
+                    "img":"/static/images/cases/penetration-testing.svg",
                     "text":"A dedicated team of people will verify vulnerability submissions to ensure that you only see exploitable vulnerabilities and prevent noise like duplicate submissions."
                 }
             ]
@@ -91,31 +91,31 @@
                     "title":"Continuous Testing",
                     "text":"Scalable and continuous testing for 90 or 365 days across web and host assets, APIs, applications and more to find and fix vulnerabilities.",
                     "buttons":"GET DATA SHEET",
-                    "img":"/images/stages/graphic.webp"
+                    "img":"/static/images/stages/graphic.webp"
                 },
                 {
                     "title":"Point-in-time Pentesting",
                     "text":"A standard, quick and rigorous 14-day pentest for precise needs like compliance, third-party testing or on specific assets.",
                     "buttons":"GET DATA SHEET",
-                    "img":"/images/stages/howitworks.webp"
+                    "img":"/static/images/stages/howitworks.webp"
                 },
                 {
                     "title":"On-demand Security Testing  ",
                     "text":"Launch tasks on-demand for targeted security objectives.",
                     "buttons":"LEARN MORE",
-                    "img":"/images/stages/howitworks11.webp"
+                    "img":"/static/images/stages/howitworks11.webp"
                 },
                 {
                     "title":"Automated Scanning",
                     "text":"See potential vulnerabilities in real-time across your attack surface with automated scanning  .",
                     "buttons":"LEARN MORE",
-                    "img":"/images/stages/howitworks12.webp"
+                    "img":"/static/images/stages/howitworks12.webp"
                 },
                 {
                     "title":"Reporting",
                     "text":"Real-time reporting that provides actionable information for faster remediation, is informative for an executive audience and meets compliance requirements .",
                     "buttons":"LEARN MORE",
-                    "img":"/images/stages/howitworks13.webp"
+                    "img":"/static/images/stages/howitworks13.webp"
                 }
             ]
         }

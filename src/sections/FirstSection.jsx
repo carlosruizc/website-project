@@ -184,9 +184,9 @@ const FirstSection = () => {
                                 {features.map((feature, index) => (
                                     index === activeIndex
                                         ?
-                                        <BlueText style={{ fontSize: "1.5rem" }}><strong>{feature.item}</strong></BlueText>
+                                        <BlueText key={index} style={{ fontSize: "1.5rem" }}><strong>{feature.item}</strong></BlueText>
                                         :
-                                        <p>{feature.item}</p>
+                                        <p key={index}>{feature.item}</p>
 
                                 ))}
                             </div>
@@ -397,11 +397,6 @@ const SubTitle = styled.p`
     font-size: 20px;
 `
 
-const BoldText = styled.p`
-    font-size: 20px;
-    font-weight: bold;
-`
-
 const RedContainer = styled.div`
     display: flex;    
     justify-content: center;
@@ -414,7 +409,7 @@ const MapContainer = styled.div`
     display: flex;    
     justify-content: space-around;
     align-items: center;
-    background-image: url(/images/red-map.webp);
+    background-image: url(/static/images/red-map.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
@@ -551,7 +546,7 @@ const UseCaseContainer = styled.div`
 const ShapeContainer = styled.div`
     display: flex; 
     flex-direction: column;
-    background-image: url(/images/demo-shape.webp);
+    background-image: url(/static/images/demo-shape.webp);
     background-repeat: no-repeat;
     background-position: left;
     background-size: auto 100%;
@@ -657,7 +652,7 @@ const BlueContainer = styled.div`
 const PowerContainer = styled.div`
     display: flex; 
     flex-direction: column;     
-    background-image: url(/images/circle-power.webp);
+    background-image: url(/static/images/circle-power.webp);
     background-repeat: no-repeat;
     background-position: right;
     background-size: auto 100%;
