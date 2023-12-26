@@ -284,37 +284,37 @@ export const footerContent = [
 export const features = [
     {
         item: "Penetration Testing",
-        img: "/static/features/penetrationtesting.webp",
+        img: "/images/features/penetrationtesting.webp",
         text: "Continuous pentesting performed by the Synack Red Team on cloud, web apps, host infrastructure, APIs and mobile."
     },
     {
         item: "Vulnerability Management",
-        img: "/static/features/vulnarabilitymanagement.webp",
+        img: "/images/features/vulnarabilitymanagement.webp",
         text: "Discover, assess, remediate and verify vulnerability patches."
     },
     {
         item: "Reporting & Real Time Analytics",
-        img: "/static/features/realtimeanalytics.webp",
+        img: "/images/features/realtimeanalytics.webp",
         text: "Discover, assess, remediate and verify vulnerability patches."
     },
     {
         item: "Testing Controls",
-        img: "/static/features/testingcontrols.webp",
+        img: "/images/features/testingcontrols.webp",
         text: "Complete visibility and control over all researchers and testing across your environment."
     },
     {
         item: "API & Integrations",
-        img: "/static/features/apiintegrations.webp",
+        img: "/images/features/apiintegrations.webp",
         text: "Improve responsiveness, triage and remediate vulnerabilities with integrated workflows."
     },
     {
         item: "Operations & Support",
-        img: "/static/features/operationssupport.webp",
+        img: "/images/features/operationssupport.webp",
         text: "Dedicated teams will verify your exploitable vulnerabilities, prioritize testing activities and scope your attack surface."
     },
     {
         item: "Global Community of Talent",
-        img: "/static/features/globalcommunity.webp",
+        img: "/images/features/globalcommunity.webp",
         text: "Access our global team of security researchers with a diverse set of skills – all through the platform."
     },
 ]
@@ -325,57 +325,57 @@ export const talent = [
     {
         name: "Busra",
         country: "United States",
-        avatar: "/static/talent/busra.webp",
+        avatar: "/images/talent/busra.webp",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/static/badges/artemis_3-1.svg",
-        badge2: "/static/badges/circle_of_trust-1.svg",
-        badge3: "/static/badges/envoy-1.svg",
-        badge4: "/static/badges/hero-1.svg",
-        badge5: "/static/badges/polygon-empty.webp",
+        badge1: "/images/badges/artemis_3-1.svg",
+        badge2: "/images/badges/circle_of_trust-1.svg",
+        badge3: "/images/badges/envoy-1.svg",
+        badge4: "/images/badges/hero-1.svg",
+        badge5: "/images/badges/polygon-empty.webp",
     },
     {
         name: "Ozgur",
-        avatar: "/static/talent/ozgur.webp",
+        avatar: "/images/talent/ozgur.webp",
         country: "Turkey",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/static/badges/artemis_3-1.svg",
-        badge2: "/static/badges/circle_of_trust-1.svg",
-        badge3: "/static/badges/envoy-1.svg",
-        badge4: "/static/badges/hero-1.svg",
-        badge5: "/static/badges/polygon-empty.webp",
+        badge1: "/images/badges/artemis_3-1.svg",
+        badge2: "/images/badges/circle_of_trust-1.svg",
+        badge3: "/images/badges/envoy-1.svg",
+        badge4: "/images/badges/hero-1.svg",
+        badge5: "/images/badges/polygon-empty.webp",
     },
     {
         name: "Adam Logue",
         country: "United States",
-        avatar: "/static/talent/adam.webp",
+        avatar: "/images/talent/adam.webp",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/static/badges/guardian_of_trust-2.svg",
-        badge2: "/static/badges/srt_of_the_year-1.svg",
-        badge3: "/static/badges/SRT-of-the-month.svg",
-        badge4: "/static/badges/titan.svg",
-        badge5: "/static/badges/polygon-empty.webp",
+        badge1: "/images/badges/guardian_of_trust-2.svg",
+        badge2: "/images/badges/srt_of_the_year-1.svg",
+        badge3: "/images/badges/SRT-of-the-month.svg",
+        badge4: "/images/badges/titan.svg",
+        badge5: "/images/badges/polygon-empty.webp",
     },
     {
         name: "Magic Sam",
         country: "United States",
-        avatar: "/static/talent/magics.webp",
+        avatar: "/images/talent/magics.webp",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/static/badges/artemis_3-1.svg",
-        badge2: "/static/badges/circle_of_trust-1.svg",
-        badge3: "/static/badges/guardian_of_trust-2.svg",
-        badge4: "/static/badges/polygon-empty.webp",
-        badge5: "/static/badges/polygon-empty.webp",
+        badge1: "/images/badges/artemis_3-1.svg",
+        badge2: "/images/badges/circle_of_trust-1.svg",
+        badge3: "/images/badges/guardian_of_trust-2.svg",
+        badge4: "/images/badges/polygon-empty.webp",
+        badge5: "/images/badges/polygon-empty.webp",
     },
     {
         name: "niksthehacker",
         country: "India",
-        avatar: "/static/talent/niks.webp",
+        avatar: "/images/talent/niks.webp",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/static/badges/srt_of_the_year-1.svg",
-        badge2: "/static/badges/SRT-of-the-month.svg",
-        badge3: "/static/badges/envoy-1.svg",
-        badge4: "/static/badges/hero-1.svg",
-        badge5: "/static/badges/titan.svg",
+        badge1: "/images/badges/srt_of_the_year-1.svg",
+        badge2: "/images/badges/SRT-of-the-month.svg",
+        badge3: "/images/badges/envoy-1.svg",
+        badge4: "/images/badges/hero-1.svg",
+        badge5: "/images/badges/titan.svg",
     },
 
 ]
@@ -383,27 +383,27 @@ export const talent = [
 export const cases = [
     {
         item: "Penetration Testing",
-        img: "/static/cases/penetration-testing.svg",
+        img: "/images/cases/penetration-testing.svg",
     },
     {
         item: "API Security Testing",
-        img: "/static/cases/api-security-testing.svg",
+        img: "/images/cases/api-security-testing.svg",
     },
     {
         item: "Application Security Testing",
-        img: "/static/cases/application-security-testing.svg",
+        img: "/images/cases/application-security-testing.svg",
     },
     {
         item: "Cloud Security Testing",
-        img: "/static/cases/cloud-security.svg",
+        img: "/images/cases/cloud-security.svg",
     },
     {
         item: "Testing for Compliance",
-        img: "/static/cases/compliance.svg",
+        img: "/images/cases/compliance.svg",
     },
     {
         item: "Bridging the Cyber Talent Gap",
-        img: "/static/cases/talent-gap.svg",
+        img: "/images/cases/talent-gap.svg",
     },
 ]
 

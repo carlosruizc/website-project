@@ -414,7 +414,7 @@ const MapContainer = styled.div`
     display: flex;    
     justify-content: space-around;
     align-items: center;
-    background-image: url(/static/red-map.webp);
+    background-image: url(/images/red-map.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
@@ -551,7 +551,7 @@ const UseCaseContainer = styled.div`
 const ShapeContainer = styled.div`
     display: flex; 
     flex-direction: column;
-    background-image: url(/static/demo-shape.webp);
+    background-image: url(/images/demo-shape.webp);
     background-repeat: no-repeat;
     background-position: left;
     background-size: auto 100%;
@@ -657,7 +657,7 @@ const BlueContainer = styled.div`
 const PowerContainer = styled.div`
     display: flex; 
     flex-direction: column;     
-    background-image: url(/static/circle-power.webp);
+    background-image: url(/images/circle-power.webp);
     background-repeat: no-repeat;
     background-position: right;
     background-size: auto 100%;

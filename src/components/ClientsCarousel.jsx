@@ -8,43 +8,43 @@ import { useMediaQuery } from "react-responsive";
 const clients = [
     {
         item: "0",
-        src: "/static/clients/allianz-logo.svg"
+        src: "/images/clients/allianz-logo.svg"
     },
     {
         item: "1",
-        src: "/static/clients/agilence-logo-blk.webp"
+        src: "/images/clients/agilence-logo-blk.webp"
     },
     {
         item: "2",
-        src: "/static/clients/cbi-health-logo-blk.webp"
+        src: "/images/clients/cbi-health-logo-blk.webp"
     },
     {
         item: "3",
-        src: "/static/clients/everlywell-logo.webp"
+        src: "/images/clients/everlywell-logo.webp"
     },
     {
         item: "4",
-        src: "/static/clients/hughes-logo-blk.webp"
+        src: "/images/clients/hughes-logo-blk.webp"
     },
     {
         item: "5",
-        src: "/static/clients/impact-logo-blk.webp"
+        src: "/images/clients/impact-logo-blk.webp"
     },
     {
         item: "6",
-        src: "/static/clients/mantech-logo-blk.webp"
+        src: "/images/clients/mantech-logo-blk.webp"
     },
     {
         item: "7",
-        src: "/static/clients/noy-logo.webp"
+        src: "/images/clients/noy-logo.webp"
     },
     {
         item: "8",
-        src: "/static/clients/veem-logo-blk.webp"
+        src: "/images/clients/veem-logo-blk.webp"
     },
     {
         item: "9",
-        src: "/static/clients/venafi-logo-blk.webp"
+        src: "/images/clients/venafi-logo-blk.webp"
     },
 ]
 
