@@ -10,23 +10,23 @@ import { useMediaQuery } from "react-responsive";
 const blogs = [
     {
         item: "How to Stay Secure Amid AI Mania",
-        src: "/static/blogs/Cyber-synack-blog-banner-resilience-VDP-pentesting-300x169.webp"
+        src: "/static/blogs/1.webp"
     },
     {
         item: "Securing at the Rate of Innovation: Investment in Control and Visibility of Testing Traffic ",
-        src: "/static/blogs/synack-exploits-explained-blog-series-image-no-text-1-300x169.webp"
+        src: "/static/blogs/2.webp"
     },
     {
         item: "Empowering Your Developer Teams: How to Overcome “Us vs. Them” with Vulnerability Remediation",
-        src: "/static/blogs/synack-blog-banner-splunk-300x169.webp"
+        src: "/static/blogs/3.webp"
     },
     {
         item: "You Are the Weakest Link: Securing the Human Element",
-        src: "/static/blogs/synack-back-to-basics-blog-banners-1-1-300x169.jpg"
+        src: "/static/blogs/4.webp"
     },
     {
         item: "Why You Need a Vulnerability Disclosure Program (VDP)",
-        src: "/static/blogs/synack-whats-ptaas-blog-300x169.webp"
+        src: "/static/blogs/5.webp"
     },
 ]
 

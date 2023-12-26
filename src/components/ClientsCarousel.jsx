@@ -12,79 +12,39 @@ const clients = [
     },
     {
         item: "1",
-        src: "/static/clients/BoubyanBank.svg"
+        src: "/static/clients/agilence-logo-blk.webp"
     },
     {
         item: "2",
-        src: "/static/clients/cdc.svg"
+        src: "/static/clients/cbi-health-logo-blk.webp"
     },
     {
         item: "3",
-        src: "/static/clients/cleveland-clinic.svg"
-    },
-    {
-        item: "4",
-        src: "/static/clients/Cognizant_Logo.svg"
-    },
-    {
-        item: "5",
-        src: "/static/clients/DefenseDigital.svg"
-    },
-    {
-        item: "6",
-        src: "/static/clients/DepartmentHealthHuman.svg"
-    },
-    {
-        item: "7",
-        src: "/static/clients/Dept-of-Transportation-Logo.svg"
-    },
-    {
-        item: "8",
-        src: "/static/clients/DISA.svg"
-    },
-    {
-        item: "9",
-        src: "/static/clients/Eastman_Chemical_Company_logo.svg"
-    },
-    {
-        item: "10",
         src: "/static/clients/everlywell-logo.webp"
     },
     {
-        item: "11",
-        src: "/static/clients/FannieMae.svg"
+        item: "4",
+        src: "/static/clients/hughes-logo-blk.webp"
     },
     {
-        item: "12",
-        src: "/static/clients/freshfields-logo.svg"
+        item: "5",
+        src: "/static/clients/impact-logo-blk.webp"
     },
     {
-        item: "13",
-        src: "/static/clients/GSA.svg"
+        item: "6",
+        src: "/static/clients/mantech-logo-blk.webp"
     },
     {
-        item: "14",
-        src: "/static/clients/InternalRevenueService.svg"
-    },
-    {
-        item: "15",
+        item: "7",
         src: "/static/clients/noy-logo.webp"
     },
     {
-        item: "16",
-        src: "/static/clients/StateofColorado.svg"
+        item: "8",
+        src: "/static/clients/veem-logo-blk.webp"
     },
     {
-        item: "17",
-        src: "/static/clients/SynSaber-Logo-Stacked-DBlue.svg"
-    },
-    {
-        item: "18",
-        src: "/static/clients/UnitedStatesAirForcе.svg"
-    },
-    {
-        item: "19",
-        src: "/static/clients/UnitedStatesArmy.svg"
+        item: "9",
+        src: "/static/clients/venafi-logo-blk.webp"
     },
 ]
 

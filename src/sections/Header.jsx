@@ -6,7 +6,7 @@ import LogoWhite from "../icons/LogoWhite"
 import Button from "../components/Button"
 import { navigate } from "gatsby"
 import { useMediaQuery } from "react-responsive"
-import { tabContent } from "../data/tabContent"
+import { tabContent } from "../data/Content"
 
 const Header = () => {
 

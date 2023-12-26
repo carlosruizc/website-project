@@ -2,48 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Button from "../components/Button"
 import { Link } from "gatsby"
-
-const footerContent = [
-    {
-        title: "Synack Platform",
-        items: [
-            "Security Testing Platform", "Credits", "FedRAMP", "Penetration Testing", "On-demand Security Testing"
-        ]
-    },
-    {
-        title: "Solutions",
-        items: [
-            "Third Party Risk", "Application Security Testing Services", "Go Beyond Bug Bounty", "Vulnerability Management", "Compliance", "Talent Gap", "API Security Testing", "Cloud Security Testing", "Penetration Testing", "Security Testing for Retail and Commerce", "Security Testing for Financial Services", "Security Testing for Technology", "Security Testing for Public Sector"
-        ]
-    },
-    {
-        title: "Partners",
-        items: [
-            "ServiceNow and Synack", "Solution Providers", "Strategic Alliances", "Synack and Accenture Federal Services", "Synack and Microsoft", "Synack Partners with Jira", "Synack Partners with Splunk", "Technology Partners"
-        ]
-    },
-    {
-        title: "Company",
-        items: [
-            "About Us", "Careers", "Leadership"
-        ]
-    },
-    {
-        title: "Resource Hub",
-        items: [
-            "Blog", "Events", "Changelog Newsletter", "README_Publication", "We’re In! Podcast", "Videos"
-        ]
-    },
-    {
-        title: "Synack Red Team",
-        items: [
-            "Pathways", "Artemis Red Team", "Envoy"
-        ],
-        button: "APPLY TO RED TEAM",
-        URL: "https://www.greenhouse.com/"
-
-    }
-]
+import { footerContent } from "../data/Content"
 
 const Footer = () => {
 
@@ -73,7 +32,7 @@ const Footer = () => {
                     <BlueTextSmall to="">Terms</BlueTextSmall>
                     <BlueTextSmall to="">Patent Info</BlueTextSmall>
                     <BlueTextSmall to="">Disclosure Policy</BlueTextSmall>
-                    <BlueTextSmall to="">Secutiry</BlueTextSmall>
+                    <BlueTextSmall to="">Security</BlueTextSmall>
                     <BlueTextSmall to="">Cookies</BlueTextSmall>
                     <BlueTextSmall to="">Modern Slavery Statement</BlueTextSmall>
                     <BlueTextSmall to="">My Privacy Choices</BlueTextSmall>
