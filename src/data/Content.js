@@ -284,37 +284,37 @@ export const footerContent = [
 export const features = [
     {
         item: "Penetration Testing",
-        img: "/static/images/features/penetrationtesting.webp",
+        img: "https://i.imgur.com/hbEE81H.png",
         text: "Continuous pentesting performed by the Synack Red Team on cloud, web apps, host infrastructure, APIs and mobile."
     },
     {
         item: "Vulnerability Management",
-        img: "/static/images/features/vulnarabilitymanagement.webp",
+        img: "https://i.imgur.com/Brtj9Xh.png",
         text: "Discover, assess, remediate and verify vulnerability patches."
     },
     {
         item: "Reporting & Real Time Analytics",
-        img: "/static/images/features/realtimeanalytics.webp",
+        img: "https://i.imgur.com/Aabq2Fu.png",
         text: "Discover, assess, remediate and verify vulnerability patches."
     },
     {
         item: "Testing Controls",
-        img: "/static/images/features/testingcontrols.webp",
+        img: "https://i.imgur.com/9HNVkbd.png",
         text: "Complete visibility and control over all researchers and testing across your environment."
     },
     {
         item: "API & Integrations",
-        img: "/static/images/features/apiintegrations.webp",
+        img: "https://i.imgur.com/TKXDoCa.png",
         text: "Improve responsiveness, triage and remediate vulnerabilities with integrated workflows."
     },
     {
         item: "Operations & Support",
-        img: "/static/images/features/operationssupport.webp",
+        img: "https://i.imgur.com/EPsDdBD.pngp",
         text: "Dedicated teams will verify your exploitable vulnerabilities, prioritize testing activities and scope your attack surface."
     },
     {
         item: "Global Community of Talent",
-        img: "/static/images/features/globalcommunity.webp",
+        img: "https://i.imgur.com/OUbIaLb.png",
         text: "Access our global team of security researchers with a diverse set of skills – all through the platform."
     },
 ]
@@ -327,10 +327,10 @@ export const talent = [
         country: "United States",
         avatar: "https://i.imgur.com/Gxr9nUc.png",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "../images/talent/busra.webp",
-        badge2: "/static/images/badges/circle_of_trust-1.svg",
-        badge3: "/static/images/badges/envoy-1.svg",
-        badge4: "/static/images/badges/hero-1.svg",
+        badge1: "https://i.imgur.com/bpR6nny.png",
+        badge2: "https://i.imgur.com/FzNlG2M.png",
+        badge3: "https://i.imgur.com/cJdGzjc.png",
+        badge4: "https://i.imgur.com/NuUibJQ.png",
         badge5: "https://i.imgur.com/eY7EBEV.png",
     },
     {
@@ -338,42 +338,42 @@ export const talent = [
         avatar: "https://i.imgur.com/MqDzvTr.png",
         country: "Turkey",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/static/images/badges/artemis_3-1.svg",
-        badge2: "/static/images/badges/circle_of_trust-1.svg",
-        badge3: "/static/images/badges/envoy-1.svg",
-        badge4: "/static/images/badges/hero-1.svg",
-        badge5: "/static/images/badges/polygon-empty.webp",
+        badge1: "https://i.imgur.com/gABxnCG.png",
+        badge2: "https://i.imgur.com/WTsFTW8.pngg",
+        badge3: "https://i.imgur.com/FzNlG2M.png",
+        badge4: "https://i.imgur.com/50Y20PI.png",
+        badge5: "https://i.imgur.com/bpR6nny.png",
     },
     {
         name: "Adam Logue",
         country: "United States",
         avatar: "https://i.imgur.com/qcWH4Ci.pngp",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/static/images/badges/guardian_of_trust-2.svg",
-        badge2: "/static/images/badges/srt_of_the_year-1.svg",
-        badge3: "/static/images/badges/SRT-of-the-month.svg",
-        badge4: "/static/images/badges/titan.svg",
-        badge5: "/static/images/badges/polygon-empty.webp",
+        badge1: "https://i.imgur.com/FzNlG2M.png",
+        badge2: "https://i.imgur.com/NuUibJQ.png",
+        badge3: "https://i.imgur.com/50Y20PI.png",
+        badge4: "https://i.imgur.com/cJdGzjc.png",
+        badge5: "https://i.imgur.com/q4lnHO1.png",
     },
     {
         name: "Magic Sam",
         country: "United States",
         avatar: "https://i.imgur.com/iXsJKwt.png",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/static/images/badges/artemis_3-1.svg",
-        badge2: "/static/images/badges/circle_of_trust-1.svg",
-        badge3: "/static/images/badges/guardian_of_trust-2.svg",
-        badge4: "/static/images/badges/polygon-empty.webp",
-        badge5: "/static/images/badges/polygon-empty.webp",
+        badge1: "https://i.imgur.com/68ipd0g.png",
+        badge2: "https://i.imgur.com/4PC70Wl.png",
+        badge3: "https://i.imgur.com/cJdGzjc.png",
+        badge4: "https://i.imgur.com/NuUibJQ.png",
+        badge5: "https://i.imgur.com/WTsFTW8.png",
     },
     {
         name: "niksthehacker",
         country: "India",
         avatar: "https://i.imgur.com/MrLdLIV.png",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/static/images/badges/srt_of_the_year-1.svg",
-        badge2: "/static/images/badges/SRT-of-the-month.svg",
-        badge3: "/static/images/badges/envoy-1.svg",
+        badge1: "https://i.imgur.com/50Y20PI.png",
+        badge2: "https://i.imgur.com/NuUibJQ.png",
+        badge3: "https://i.imgur.com/WTsFTW8.png",
         badge4: "https://i.imgur.com/eY7EBEV.png",
         badge5: "https://i.imgur.com/eY7EBEV.png",
     },
@@ -433,43 +433,43 @@ export const videos = [
 export const clients = [
     {
         item: "0",
-        src: "../static/images/clients/allianz-logo.webp"
+        src: "https://i.imgur.com/cDHBcAn.png"
     },
     {
         item: "1",
-        src: "/static/images/clients/agilence-logo-blk.webp"
+        src: "https://i.imgur.com/IDZ3MuG.png"
     },
     {
         item: "2",
-        src: "/static/images/clients/cbi-health-logo-blk.webp"
+        src: "https://i.imgur.com/nEGqYYy.png"
     },
     {
         item: "3",
-        src: "/static/images/clients/everlywell-logo.webp"
+        src: "https://i.imgur.com/zWQWLsv.png"
     },
     {
         item: "4",
-        src: "/static/images/clients/hughes-logo-blk.webp"
+        src: "https://i.imgur.com/A412IWg.png"
     },
     {
         item: "5",
-        src: "/static/images/clients/impact-logo-blk.webp"
+        src: "https://i.imgur.com/1TSalnq.png"
     },
     {
         item: "6",
-        src: "/static/images/clients/mantech-logo-blk.webp"
+        src: "https://i.imgur.com/4HjPesv.png"
     },
     {
         item: "7",
-        src: "/static/images/clients/noy-logo.webp"
+        src: "https://i.imgur.com/5GXD8f5.png"
     },
     {
         item: "8",
-        src: "/static/images/clients/veem-logo-blk.webp"
+        src: "https://i.imgur.com/xrg0fFI.png"
     },
     {
         item: "9",
-        src: "/static/images/clients/venafi-logo-blk.webp"
+        src: "https://i.imgur.com/69KCv6V.png"
     },
 ]
 
