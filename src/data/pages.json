@@ -23,17 +23,17 @@
             "maincards":[
                 {
                     "title":"Scalable Testing Programs",
-                    "img":"/static/images/cases/penetration-testing.svg",
+                    "img":"https://i.imgur.com/S07aQ9q.png",
                     "text":"Test at scale from a single to thousands of assets through harnessing a vetted community of researchers and smart technology"
                 },
                 {
                     "title":"Security Performance Quantified",
-                    "img":"/static/images/cases/penetration-testing.svg",
+                    "img":"https://i.imgur.com/hjVP72Q.png",
                     "text":"Board-level insights and scores that help you drive initiatives, stay within budget and minimize risk in order to enable the business and ensure business continuity"
                 },
                 {
                     "title":"Remediate Faster",
-                    "img":"/static/images/cases/penetration-testing.svg",
+                    "img":"https://i.imgur.com/J7eBb1L.png",
                     "text":"Speed up remediation timelines from months to days or weeks through patch verification, role-based access control, APIs and integrations"
                 }
             ]
@@ -53,32 +53,32 @@
             "maincards":[
                 {
                     "title":"Continuous Testing to Reduce Risk Over Time",
-                    "img":"/static/images/cases/penetration-testing.svg",
+                    "img":"https://i.imgur.com/S07aQ9q.png",
                     "text":"Vulnerabilities across the attack surface can emerge at any time. Test daily, not once a year, to improve your posture over time."
                 },
                 {
                     "title":"Discover Root Causes of Vulnerabilities ",
-                    "img":"/static/images/cases/penetration-testing.svg",
+                    "img":"https://i.imgur.com/hjVP72Q.png",
                     "text":"See security trends across vulnerabilities, identify root causes and materially improve your security posture."
                 },
                 {
                     "title":"Fast and Efficient Pentesting",
-                    "img":"/static/images/cases/penetration-testing.svg",
+                    "img":"https://i.imgur.com/xLMCS4N.pngg",
                     "text":"Launch tests in days, not weeks, with on-demand testing and activation of the Synack Red Team."
                 },
                 {
                     "title":"Reporting and Actionable Insights",
-                    "img":"/static/images/cases/penetration-testing.svg",
+                    "img":"/https://i.imgur.com/KzAmL5N.png",
                     "text":"Synack allows for workplace collaboration with customizable reporting, integrations and role-based access controls."
                 },
                 {
                     "title":"Total Visibility",
-                    "img":"/static/images/cases/penetration-testing.svg",
+                    "img":"https://i.imgur.com/J7eBb1L.png",
                     "text":"Get a clear view of vulnerabilities, testing traffic, remediation status and detailed reports for proof-of-work."
                 },
                 {
                     "title":"Reduce False Positives",
-                    "img":"/static/images/cases/penetration-testing.svg",
+                    "img":"https://i.imgur.com/4pWo8i7.png",
                     "text":"A dedicated team of people will verify vulnerability submissions to ensure that you only see exploitable vulnerabilities and prevent noise like duplicate submissions."
                 }
             ]

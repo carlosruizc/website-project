@@ -8,11 +8,11 @@ const NotFoundPage = () => (
   <Box>
     <h1>Something Went Wrong</h1>
     <h2>The page you were looking for was not found</h2>
-    <img src="/404.webp" />
+    <img src="https://i.imgur.com/gLN4eEU.png" />
   </Box>
 )
 
-const Box=styled.div`
+const Box = styled.div`
     display: flex;
     flex-direction: column;
     padding: 70px;
