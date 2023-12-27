@@ -325,17 +325,17 @@ export const talent = [
     {
         name: "Busra",
         country: "United States",
-        avatar: "/static/images/talent/busra.webp",
+        avatar: "https://i.imgur.com/Gxr9nUc.png",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
-        badge1: "/static/images/badges/artemis_3-1.svg",
+        badge1: "../images/talent/busra.webp",
         badge2: "/static/images/badges/circle_of_trust-1.svg",
         badge3: "/static/images/badges/envoy-1.svg",
         badge4: "/static/images/badges/hero-1.svg",
-        badge5: "/static/images/badges/polygon-empty.webp",
+        badge5: "https://i.imgur.com/eY7EBEV.png",
     },
     {
         name: "Ozgur",
-        avatar: "/static/images/talent/ozgur.webp",
+        avatar: "https://i.imgur.com/MqDzvTr.png",
         country: "Turkey",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
         badge1: "/static/images/badges/artemis_3-1.svg",
@@ -347,7 +347,7 @@ export const talent = [
     {
         name: "Adam Logue",
         country: "United States",
-        avatar: "/static/images/talent/adam.webp",
+        avatar: "https://i.imgur.com/qcWH4Ci.pngp",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
         badge1: "/static/images/badges/guardian_of_trust-2.svg",
         badge2: "/static/images/badges/srt_of_the_year-1.svg",
@@ -358,7 +358,7 @@ export const talent = [
     {
         name: "Magic Sam",
         country: "United States",
-        avatar: "/static/images/talent/magics.webp",
+        avatar: "https://i.imgur.com/iXsJKwt.png",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
         badge1: "/static/images/badges/artemis_3-1.svg",
         badge2: "/static/images/badges/circle_of_trust-1.svg",
@@ -369,13 +369,13 @@ export const talent = [
     {
         name: "niksthehacker",
         country: "India",
-        avatar: "/static/images/talent/niks.webp",
+        avatar: "https://i.imgur.com/MrLdLIV.png",
         stack: "WebApp / API / VMs / Android / Network / Recon / Cloud / Mobile",
         badge1: "/static/images/badges/srt_of_the_year-1.svg",
         badge2: "/static/images/badges/SRT-of-the-month.svg",
         badge3: "/static/images/badges/envoy-1.svg",
-        badge4: "/static/images/badges/hero-1.svg",
-        badge5: "/static/images/badges/titan.svg",
+        badge4: "https://i.imgur.com/eY7EBEV.png",
+        badge5: "https://i.imgur.com/eY7EBEV.png",
     },
 
 ]
@@ -383,27 +383,27 @@ export const talent = [
 export const cases = [
     {
         item: "Penetration Testing",
-        img: "/static/images/cases/penetration-testing.svg",
+        img: "https://i.imgur.com/KzAmL5N.png",
     },
     {
         item: "API Security Testing",
-        img: "/static/images/cases/api-security-testing.svg",
+        img: "https://i.imgur.com/S07aQ9q.png",
     },
     {
         item: "Application Security Testing",
-        img: "/static/images/cases/application-security-testing.svg",
+        img: "https://i.imgur.com/4pWo8i7.png",
     },
     {
         item: "Cloud Security Testing",
-        img: "/static/images/cases/cloud-security.svg",
+        img: "https://i.imgur.com/hjVP72Q.png",
     },
     {
         item: "Testing for Compliance",
-        img: "/static/images/cases/compliance.svg",
+        img: "https://i.imgur.com/xLMCS4N.png",
     },
     {
         item: "Bridging the Cyber Talent Gap",
-        img: "/static/images/cases/talent-gap.svg",
+        img: "https://i.imgur.com/J7eBb1L.png",
     },
 ]
 
@@ -470,5 +470,28 @@ export const clients = [
     {
         item: "9",
         src: "/static/images/clients/venafi-logo-blk.webp"
+    },
+]
+
+export const blogs = [
+    {
+        item: "How to Stay Secure Amid AI Mania",
+        src: "https://i.imgur.com/LLqMP1p.png"
+    },
+    {
+        item: "Securing at the Rate of Innovation: Investment in Control and Visibility of Testing Traffic ",
+        src: "https://i.imgur.com/YG0JqLC.png"
+    },
+    {
+        item: "Empowering Your Developer Teams: How to Overcome “Us vs. Them” with Vulnerability Remediation",
+        src: "https://i.imgur.com/Uvc9xDd.png"
+    },
+    {
+        item: "You Are the Weakest Link: Securing the Human Element",
+        src: "https://i.imgur.com/wSNYvjS.pngp"
+    },
+    {
+        item: "Why You Need a Vulnerability Disclosure Program (VDP)",
+        src: "https://i.imgur.com/LLqMP1p.png"
     },
 ]

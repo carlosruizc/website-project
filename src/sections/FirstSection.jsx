@@ -13,7 +13,7 @@ import { Link } from "gatsby";
 import StickyBox from "react-sticky-box";
 import { fadeIn, fadeOut } from "../style/animations";
 import { useMediaQuery } from "react-responsive";
-import { cases, features, talent, videos } from "../data/Content";
+import { cases, features, videos, talent } from "../data/Content";
 
 const FirstSection = () => {
     const [activeSection, setActiveSection] = useState("");
@@ -70,21 +70,21 @@ const FirstSection = () => {
         )
     }
 
-    const talentTemplate = (talent) => {
+    const talentTemplate = (person) => {
         return (
             <TalentContainer>
-                <Name>{talent.name}</Name>
-                <Country>{talent.country}</Country>
+                <Name>{person.name}</Name>
+                <Country>{person.country}</Country>
                 <RoundContainer>
-                    <RoundImage src={talent.avatar} />
+                    <RoundImage src={person.avatar} alt={person.name} style={{ justifyContent: "center", width: "100%", height: "100%" }} />
                 </RoundContainer>
-                <Stack>{talent.stack}</Stack>
+                <Stack>{person.stack}</Stack>
                 <Badges>
-                    <BadgeContainer src={talent.badge1} />
-                    <BadgeContainer src={talent.badge2} />
-                    <BadgeContainer src={talent.badge3} />
-                    <BadgeContainer src={talent.badge4} />
-                    <BadgeContainer src={talent.badge5} />
+                    <BadgeContainer src={person.badge1} />
+                    <BadgeContainer src={person.badge2} />
+                    <BadgeContainer src={person.badge3} />
+                    <BadgeContainer src={person.badge4} />
+                    <BadgeContainer src={person.badge5} />
                 </Badges>
             </TalentContainer>
         )
@@ -409,7 +409,7 @@ const MapContainer = styled.div`
     display: flex;    
     justify-content: space-around;
     align-items: center;
-    background-image: url(/static/images/red-map.webp);
+    background-image: url(https://i.imgur.com/EVTLmow.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
@@ -546,7 +546,7 @@ const UseCaseContainer = styled.div`
 const ShapeContainer = styled.div`
     display: flex; 
     flex-direction: column;
-    background-image: url(/static/images/demo-shape.webp);
+    background-image: url(https://i.imgur.com/6yPrQ1T.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: auto 100%;
@@ -652,7 +652,7 @@ const BlueContainer = styled.div`
 const PowerContainer = styled.div`
     display: flex; 
     flex-direction: column;     
-    background-image: url(/static/images/circle-power.webp);
+    background-image: url(https://i.imgur.com/tJi2QYw.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: auto 100%;
