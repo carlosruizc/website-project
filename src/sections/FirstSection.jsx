@@ -546,7 +546,7 @@ const UseCaseContainer = styled.div`
 const ShapeContainer = styled.div`
     display: flex; 
     flex-direction: column;
-    background-image: url(https://i.imgur.com/6yPrQ1T.png);
+    background-image: url(https://i.imgur.com/uwxHtVR.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: auto 100%;
