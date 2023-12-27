@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Header from "../sections/header"
+import Header from "../sections/Header"
 import FirstSection from "../sections/FirstSection"
 import Footer from "../sections/Footer"
 
